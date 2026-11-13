@@ -295,3 +295,12 @@ img {
   user-select: none;
   -webkit-touch-callout: none; /* tira o menu de segurar no iPhone */
 }
+
+/* BÔNUS e e-mail do rodapé com a fonte do body */
+.bonus-inner .row,
+.bonus-inner .mail,
+.contact-row a.lnk {
+  font-family: var(--font-body);
+}
+.bonus-inner .row { font-size: 2.8rem; }
+.bonus-inner .mail { font-size: 1.15rem; }
