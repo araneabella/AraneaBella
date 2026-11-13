@@ -256,11 +256,11 @@ img { display: block; max-width: 100%; }
 @media (max-width: 860px) {
   .top { grid-template-columns: 1fr; }
   .photo-col { max-width: 380px; margin: 0 auto; width: 100%; }
-  .headline { white-space: normal; }
-  .bdsm { flex-wrap: wrap; justify-content: center; gap: 8px 22px; }
-  .langs { gap: 28px; }
-  .pills { display: none; }
-  .social { justify-content: center; margin-top: 30px; padding: 0; }
+  .headline { font-size: clamp(1.8rem, 4.6vw, 3.3rem); font-weight: 700; }
+  .bdsm     { font-size: clamp(1.5rem, 3vw, 2.4rem); }
+  body      { font-weight: 500; }
+  .story p  { font-size: clamp(1rem, 1.8vw, 1.25rem); }
+  .tags     { font-size: clamp(1rem, 1.9vw, 1.3rem); }
 }
 @media (max-width: 700px) {
   .story { grid-template-columns: 1fr; }
