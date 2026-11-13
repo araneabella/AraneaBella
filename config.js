@@ -11,6 +11,6 @@ window.SITE = {
   contato: "mailto:araneabelladona@gmail.com",
 
   // Redes sociais (ícone "P" e ícone "X")
-  patreon: "https://privacy.com.br/@aranea",
+  privacy: "https://privacy.com.br/@aranea",
   x: "https://x.com/AraneaBella"
 };
