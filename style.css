@@ -219,7 +219,6 @@ img { display: block; max-width: 100%; }
 .bonus-bar { height: 112px; }                      
 .bonus-inner { transform: translateY(-6px); }       
 .bonus-inner .row { font-size: 2.8rem; }
-.bonus-inner .row svg { width: 48px; height: 48px; } 
 .bonus-inner .mail { font-size: 1.15rem; }
 
 /* ====== Animações ====== */
@@ -290,3 +289,10 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
 }
 .place::first-line { font-weight: 700; }  /* só BRASIL / BRAZIL, não "SÃO PAULO - SP" */
+
+/* BÔNUS e e-mail do rodapé com a fonte do body */
+.bonus-inner .row,
+.bonus-inner .mail,
+.contact-row a.lnk {
+  font-family: var(--font-body);
+}
