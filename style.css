@@ -290,10 +290,3 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
 }
 .place::first-line { font-weight: 700; }  /* só BRASIL / BRAZIL, não "SÃO PAULO - SP" */
-
-/* BÔNUS e e-mail do rodapé com a fonte do body */
-.bonus-inner .row,
-.bonus-inner .mail,
-.contact-row a.lnk {
-  font-family: var(--font-body);
-}
