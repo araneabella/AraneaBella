@@ -310,7 +310,7 @@ img {
   content: "";
   position: absolute; inset: 0; z-index: -1;
   background: var(--red-deep);
-  clip-path: polygon(0 100%, 0 60%, 60% 0, 60% 0, 100% 60%, 100% 100%);
+  clip-path: polygon(0 100%, 0 60%, 40% 0, 60% 0, 100% 60%, 100% 100%);
 }
 @media (max-width: 700px) {
   .bonus-bar::before {
