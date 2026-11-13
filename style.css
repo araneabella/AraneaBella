@@ -216,8 +216,8 @@ img { display: block; max-width: 100%; }
   display: flex; justify-content: center; align-items: center;
   transition: filter .4s;
 }
-.bonus-bar:hover { filter: brightness(1.25); }
-.bonus-inner { text-align: center; color: #000; transform: translateY(6px); }
+.bonus-bar { height: 112px; }                    
+.bonus-inner { transform: translateY(-6px); }      
 .bonus-inner .row { display: flex; justify-content: center; align-items: center; gap: 6px; font-family: var(--font-cond); font-size: 1.8rem; font-weight: 600; letter-spacing: .03em; }
 .bonus-inner .row svg { width: 34px; height: 34px; fill: none; stroke: #000; stroke-width: 1.6; }
 
@@ -288,3 +288,10 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
 }
 .place::first-line { font-weight: 700; }  /* só BRASIL / BRAZIL, não "SÃO PAULO - SP" */
+
+img {
+  pointer-events: none;        /* clique direito/segurar atinge o fundo, não a imagem */
+  -webkit-user-drag: none;     /* impede arrastar a imagem */
+  user-select: none;
+  -webkit-touch-callout: none; /* tira o menu de segurar no iPhone */
+}
