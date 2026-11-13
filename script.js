@@ -1,5 +1,12 @@
 /* Aplica os links de config.js e ativa as animações de rolagem */
 (function () {
+  var p = location.pathname;
+  if (/\.html$/.test(p)) {
+    p = p.replace(/index\.html$/, "").replace(/\.html$/, "");
+    history.replaceState(null, "", p + location.search + location.hash);
+  }
+})();
+(function () {
   var cfg = window.SITE || {};
 
   // Aplica os links (data-link="bonus" | "contato" | "patreon" | "x")
