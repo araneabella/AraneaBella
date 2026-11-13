@@ -300,7 +300,4 @@ img {
 /* BÔNUS e e-mail do rodapé com a fonte do body */
 .bonus-inner .row,
 .bonus-inner .mail,
-  font-family: var(--font-body);
 }
-.bonus-inner .row { font-size: 2.8rem; }
-.bonus-inner .mail { font-size: 1.15rem; }
