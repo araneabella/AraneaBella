@@ -1,4 +1,8 @@
 /* Aplica os links de config.js e ativa as animações de rolagem */
+document.addEventListener("contextmenu", function (e) {
+  if (e.target.closest(".photo-col, .lang, .social, .pills")) e.preventDefault();
+});
+
 (function () {
   var p = location.pathname;
   if (/\.html$/.test(p)) {
