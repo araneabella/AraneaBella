@@ -6,7 +6,7 @@
   --bg: #000;
   --font-title: "Amatic SC", cursive;
   --font-body: "Cormorant Garamond", Georgia, serif;
-  --font-cond: "Big Shoulders Display", "Oswald", Impact, sans-serif;
+  --font-cond: "Amatic SC", cursive;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
