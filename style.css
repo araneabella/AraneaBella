@@ -278,3 +278,15 @@ img { display: block; max-width: 100%; }
   .name .first { font-size: 2.4rem; }
   .name .last { font-size: 1.7rem; }
 }
+/* ===== Negrito ===== */
+.name .first,        /* ARANEA */
+.bdsm,               /* Bondage, Disciplina, Masoquismo, Submissão (a inicial grande também) */
+.headline,           /* SWITCHER E EXPERIMENTALISTA */
+.story h2,           /* A DONA ARANHA TEM HISTÓRIA */
+.notice,             /* *NÃO APOIO O TRABALHO SEXUAL* */
+.contact-row a.lnk,  /* [E-mail] e [BÔNUS] */
+.bonus-inner .row,   /* BÔNUS do rodapé */
+.bonus-inner .mail { /* araneabelladona@gmail.com */
+  font-weight: 700;
+}
+.place::first-line { font-weight: 700; }  /* só BRASIL / BRAZIL, não "SÃO PAULO - SP" */
