@@ -157,6 +157,7 @@ img { display: block; max-width: 100%; }
 .social a { display: block; width: 28px; height: 28px; transition: transform .3s, filter .3s; }
 .social a:hover { transform: translateY(-3px) rotate(-6deg); filter: drop-shadow(0 0 8px rgba(230, 13, 13, .9)); }
 .social svg { width: 100%; height: 100%; fill: currentColor; }
+.social img { width: 100%; height: 100%; object-fit: contain; }
 .social .patreon { color: #e0473f; }
 
 /* ====== Seções ====== */
