@@ -297,7 +297,26 @@ img {
   -webkit-touch-callout: none; /* tira o menu de segurar no iPhone */
 }
 
-/* BÔNUS e e-mail do rodapé com a fonte do body */
-.bonus-inner .row,
-.bonus-inner .mail,
+/* ===== Barra BÔNUS: fundo centralizado + texto um pouco maior ===== */
+.bonus-bar {
+  position: relative;
+  isolation: isolate;
+  display: flex; justify-content: center; align-items: center;
+  height: 92px;
+  background: none;
+  clip-path: none;
 }
+.bonus-bar::before {              /* o triângulo/trapézio de fundo */
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background: var(--red-deep);
+  clip-path: polygon(0 100%, 0 62%, 39% 0, 61% 0, 100% 62%, 100% 100%);
+}
+@media (max-width: 700px) {
+  .bonus-bar::before {
+    clip-path: polygon(0 100%, 0 40%, 36% 0, 64% 0, 100% 40%, 100% 100%);
+  }
+}
+.bonus-inner { transform: translateY(-2px); }
+.bonus-inner .row  { font-size: 2.1rem; }   /* BÔNUS: era 1.8rem */
+.bonus-inner .mail { font-size: .8rem; }    /* e-mail: era .62rem */
