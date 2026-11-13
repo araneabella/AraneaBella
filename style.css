@@ -165,8 +165,8 @@ img { display: block; max-width: 100%; }
 
 .story {
   display: grid;
-  grid-template-columns: minmax(170px, 230px) 1fr;
-  gap: 22px;
+  grid-template-columns: max-content 1fr;
+  gap: 20px;
   align-items: center;
   margin-top: 36px;
 }
