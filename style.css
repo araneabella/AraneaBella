@@ -212,14 +212,14 @@ img { display: block; max-width: 100%; }
   margin-top: 6px;
   height: 78px;
   background: var(--red-deep);
-  clip-path: polygon(0 100%, 0 62%, 39% 0, 61% 0, 100% 62%, 100% 100%);
+  clip-path: polygon(9% 100%, 50% 0, 61% 0, 100% 62%, 100% 100%, 0 100%);
   display: flex; justify-content: center; align-items: center;
   transition: filter .4s;
 }
-.bonus-bar { height: 112px; }                      
-.bonus-inner { transform: translateY(-6px); }       
-.bonus-inner .row { font-size: 2.8rem; }
-.bonus-inner .mail { font-size: 1.15rem; }
+.bonus-bar:hover { filter: brightness(1.25); }
+.bonus-inner { text-align: center; color: #000; transform: translateY(6px); }
+.bonus-inner .row { display: flex; justify-content: center; align-items: center; gap: 6px; font-family: var(--font-cond); font-size: 1.8rem; font-weight: 600; letter-spacing: .03em; }
+.bonus-inner .row svg { width: 34px; height: 34px; fill: none; stroke: #000; stroke-width: 1.6; }
 
 /* ====== Animações ====== */
 .fade { opacity: 0; transform: translateY(16px); animation: rise .9s ease-out forwards; }
