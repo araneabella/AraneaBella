@@ -216,10 +216,11 @@ img { display: block; max-width: 100%; }
   display: flex; justify-content: center; align-items: center;
   transition: filter .4s;
 }
-.bonus-bar { height: 112px; }                    
-.bonus-inner { transform: translateY(-6px); }      
+.bonus-bar:hover { filter: brightness(1.25); }
+.bonus-inner { text-align: center; color: #000; transform: translateY(6px); }
 .bonus-inner .row { display: flex; justify-content: center; align-items: center; gap: 6px; font-family: var(--font-cond); font-size: 1.8rem; font-weight: 600; letter-spacing: .03em; }
 .bonus-inner .row svg { width: 34px; height: 34px; fill: none; stroke: #000; stroke-width: 1.6; }
+.bonus-inner .mail { font-family: var(--font-body); font-size: .62rem; letter-spacing: .03em; margin-top: -2px; }
 
 /* ====== Animações ====== */
 .fade { opacity: 0; transform: translateY(16px); animation: rise .9s ease-out forwards; }
@@ -299,7 +300,6 @@ img {
 /* BÔNUS e e-mail do rodapé com a fonte do body */
 .bonus-inner .row,
 .bonus-inner .mail,
-.contact-row a.lnk {
   font-family: var(--font-body);
 }
 .bonus-inner .row { font-size: 2.8rem; }
