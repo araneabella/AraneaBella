@@ -216,11 +216,11 @@ img { display: block; max-width: 100%; }
   display: flex; justify-content: center; align-items: center;
   transition: filter .4s;
 }
-.bonus-bar:hover { filter: brightness(1.25); }
-.bonus-inner { text-align: center; color: #000; transform: translateY(6px); }
-.bonus-inner .row { display: flex; justify-content: center; align-items: center; gap: 6px; font-family: var(--font-cond); font-size: 1.8rem; font-weight: 600; letter-spacing: .03em; }
-.bonus-inner .row svg { width: 34px; height: 34px; fill: none; stroke: #000; stroke-width: 1.6; }
-.bonus-inner .mail { font-family: var(--font-body); font-size: .62rem; letter-spacing: .03em; margin-top: -2px; }
+.bonus-bar { height: 112px; }                       /* era 78px: mais altura para caber o texto maior */
+.bonus-inner { transform: translateY(-6px); }       /* era 6px: sobe o conteúdo */
+.bonus-inner .row { font-size: 2.5rem; gap: 10px; } /* "BÔNUS" maior */
+.bonus-inner .row svg { width: 48px; height: 48px; } /* o livro */
+.bonus-inner .mail { font-size: 1rem; margin-top: 2px; } /* o e-mail */
 
 /* ====== Animações ====== */
 .fade { opacity: 0; transform: translateY(16px); animation: rise .9s ease-out forwards; }
