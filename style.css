@@ -341,7 +341,16 @@ img {
   opacity: 0.6;     /* Deixa o bloco inteiro (QR + selo) mais transparente */
   transition: opacity .3s; 
 .qr:hover { opacity: 0.6; }
-.qr img { width: 100%; height: auto; border-radius: 6px; }
+.qr img { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 6px; 
+  display: block;
+}
 @media (max-width: 700px) {
-  .qr { float: none; display: block; width: 120px; margin: 0 auto 14px; }
+  .qr { 
+    position: static; /* No celular, volta ao fluxo normal para não cobrir textos */
+    width: 100px; 
+    margin: 0 auto 14px; 
+  }
 }
