@@ -340,14 +340,13 @@ img {
 
 /* 2. Configuração do QR Code */
 .qr { 
-  position: absolute;
-  top: 15px;             /* Distância do topo da caixa pai */
-  right: 15px;           /* Distância da direita da caixa pai */
-  width: 85px;           /* Tamanho reduzido (ajuste conforme preferir) */
-  height: auto;          /* Garante que a altura acompanhe a largura */
-  opacity: 0.6;          /* Transparência do bloco inteiro */
+  position: relative;    /* Mantém no fluxo normal e segura o .pix-badge no centro */
+  float: right;          /* Joga para a direita sem subir para o topo da página */
+  width: 85px;
+  min-width: 85px;       /* Impede que fique espremido */
+  margin: 0 0 12px 16px; /* Espaço para o texto não encostar */
+  opacity: 0.6;
   transition: opacity .3s;
-  z-index: 10;           /* Evita que fique escondido atrás de fundos */
 }
 
 .qr:hover { 
@@ -356,10 +355,9 @@ img {
 
 /* 3. Proteção contra esmagamento e distorção */
 .qr > img { 
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 1 / 1;   /* Trava a proporção quadrada original do QR Code */
-  object-fit: contain;   /* Impede qualquer corte ou achatamento */
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 1 / 1;   /* Mantém a proporção quadrada exata */
   border-radius: 6px; 
   display: block;
 }
