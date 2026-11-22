@@ -13,4 +13,5 @@ window.SITE = {
   // Redes sociais (ícone "P" e ícone "X")
   privacy: "https://privacy.com.br/@aranea",
   x: "https://x.com/AraneaBella"
+  pix: "https://linkspix.app/araneabella",
 };
